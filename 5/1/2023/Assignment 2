@@ -1,0 +1,25 @@
+n=6
+        1 21 32 10 8 6
+        k=3
+
+        order: 1 6 8 10 21 32
+        last three elements
+        10 21 32
+        min:10
+        max:32
+        difference:22
+        output:22"""
+
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+l.sort()
+m=l[n-k:n]
+print(max(m)-min(m))
+
+
+output:
+6
+1 21 32 10 8 6
+3
+22
